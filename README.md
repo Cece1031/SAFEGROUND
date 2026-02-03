@@ -40,12 +40,12 @@ Given multiple stochastic grounding samples, SafeGround constructs a spatial pro
 
 ### Implemented Uncertainty Measures
 
-| Method          | Description                     | Definition                                                                      |
-| --------------- | ------------------------------- | ------------------------------------------------------------------------------- |
-| `margin`        | Ambiguity between top-2 regions | (1 - \frac{\mu_1 - \mu_2}{\mu_1 + \varepsilon})                                 |
-| `entropy`       | Distributional dispersion       | (-\sum p_i \log p_i ,/, \log n)                                                 |
-| `concentration` | Lack of spatial concentration   | (1 - \sum p_i^2)                                                                |
-| `combined`      | Composite uncertainty           | (0.2,U_{\text{margin}} + 0.2,U_{\text{entropy}} + 0.6,U_{\text{concentration}}) |
+| Method          | Description                     | 
+| --------------- | ------------------------------- | 
+| `margin`        | Ambiguity between top-2 regions |
+| `entropy`       | Distributional dispersion       | 
+| `concentration` | Lack of spatial concentration   |
+| `combined`      | Composite uncertainty           | 
 
 ---
 
@@ -73,6 +73,7 @@ The largest threshold whose upper bound does not exceed the target risk level is
 | `upper_bound`     | Clopper–Pearson FDR upper confidence bound |
 
 ---
+More code coming soon.
 
 ## Citation
 
